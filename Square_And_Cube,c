@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void squareAndCube(int num, int *square, int *cube) {
+    *square = num * num;
+    *cube = num * num * num;
+}
+int main() {
+    int num, sq, cu;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    squareAndCube(num, &sq, &cu);
+
+    printf("Square: %d, Cube: %d\n", sq, cu);
+    return 0;
+}
