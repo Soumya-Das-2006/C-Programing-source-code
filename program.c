@@ -1,33 +1,26 @@
-#include<stdio.h>
- #include<stdlib.h>
- 
- 
- int main(){
- 
- char option[]="yn";
-char answer;
-char answer1;
+#include <stdio.h>
 
- printf("are you in college???\n");
-printf("choose between y or n\n");
- scanf("%c", &answer);
- if(answer==option[0]){
-printf("which one ,is it pu\n");
- printf("again choose betn y or n\n");
+int main() {
 
- scanf(" %c", &answer1);
+    char answer, answer1;
 
- if(answer1==option[0]){
- printf("so basically , you are fucked up\n");
+    printf("Are you in college?\n");
+    printf("Choose between y or n:\n");
+    scanf(" %c", &answer);
 
- }
-else {
-printf("you got some life\n");
+    if (answer == 'y') {
+        printf("Which one, is it PU?\n");
+        printf("Again choose between y or n:\n");
+        scanf(" %c", &answer1);
+
+        if (answer1 == 'y') {
+            printf("So basically, you are fucked up\n");
+        } else {
+            printf("You got some life\n");
+        }
+    } else {
+        printf("Damn, you got some life\n");
+    }
+
+    return 0;
 }
- }
-else{
- printf("damm you got some life");
-
-}
-return 0;
- }
